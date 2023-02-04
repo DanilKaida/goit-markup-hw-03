@@ -5,12 +5,36 @@
   --hero-text-color: #ffffff;
   --second-backgrond-color: #f4f4fd;
   --hero-footer-color: #2e2f42;
-  --hover-focus-color: #4d5ae5;
+  --main-button-color: #4D5AE5;
+  --hover-focus-color: #404BBF;
+}
+p,h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+}
+
+ul{
+  margin: 0;
+  padding-left: 0;
+}
+
+button{
+  cursor: pointer;
+}
+
+img{
+    display: block;
 }
 
 body {
   font-family: "Roboto", sans-serif;
   color: var(--main-text-color);
+}
+
+.container{
+width: 1158px;
+padding-left: 15px;
+padding-right: 15px;
+margin: 0 auto;
 }
 
 .title {
@@ -23,6 +47,19 @@ body {
   color: var(--main-title-color);
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 .link {
   text-decoration: none;
 }
@@ -33,6 +70,8 @@ body {
 
 /*----------------------------- HEADER */
 .header {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-navigation {
@@ -48,14 +87,16 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-title-color);
-}
+  width: 115px;
+    height: 24px;
+    }
 
 .header-logo:is(:hover, :focus) {
   color: var(--hover-focus-color);
 }
 
 .logo-one {
-  color: #4d5ae5;
+  color: var(--main-button-color);
 }
 
 .header-list {
@@ -109,7 +150,7 @@ body {
 }
 
 .hero-btn {
-  background-color: var(--hover-focus-color);
+  background-color: var(--main-button-color);
   font-family: 'Roboto';
   font-weight: 500;
   font-size: 16px;
@@ -118,11 +159,9 @@ body {
   align-items: center;
   letter-spacing: 0.04em;
   color: var(--hero-text-color);
-  cursor: pointer;
 }
 .hero-btn:is(:hover, :focus) {
-  color: var(--hover-focus-color);
-  background-color: var(--hero-text-color);
+    background-color: var(--hover-focus-color);
 }
 /* ----------------------section FEATURES */
 
@@ -232,7 +271,10 @@ body {
 
 /* !-----------------------------------FILTER --*/
 
-.portfolio-list {
+.filter-list {
+}
+
+.filter-item{
 }
 
 .portfolio-btn {
@@ -245,8 +287,8 @@ body {
   text-align: center;
   letter-spacing: 0.04em;
   background-color: var(--second-backgrond-color);
-  color: var(--hover-focus-color);
-  cursor: pointer;
+  color: var(--main-button-color);
+
 }
 .portfolio-btn:is(:hover, :focus) {
   color: #FFFFFF;
@@ -273,7 +315,7 @@ body {
 
 .examples-type {
   font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   color: var(--main-text-color);
-    line-height: 1.5;
-    letter-spacing: 0.02em;
   }
