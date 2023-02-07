@@ -186,6 +186,7 @@ background-color: var(--hero-footer-color);
   padding: 16px 32px;
   border-radius: 4px;
   margin-bottom: 188px;
+  border: none;
 }
 
 .hero-btn:is(:hover, :focus) {
